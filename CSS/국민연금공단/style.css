@@ -57,7 +57,16 @@ body
 {
     zoom: 1;
 }
+input[type="checkbox"]
+{
+    display: none;
+}
 
+h1
+{
+    font-size: 30px;
+    font-weight: bold;
+}
 
 
 /*----------------header container------------------*/
@@ -68,9 +77,10 @@ body
     justify-content: space-around;
     align-items: center;
     height: 80px;
+    margin-bottom: 1rem;
 }
 
-/*----------------------header item-----------------------*/
+/*----------------------header1 item-----------------------*/
 
 .header-item
 {
@@ -98,6 +108,8 @@ body
    
 }
 
+
+
 #header-language-dropdown ul li a
 {   
     color: gray;
@@ -112,8 +124,157 @@ body
     display: block;
 }
 
+#header-checkbox1:checked + label
+{
+   border: 1px solid red;
+}
+#header-checkbox2:checked + label
+{
+    border: 1px solid green
+    ;
+}
 
 
 
+/*header2 item*/
+.header-container2
+{
+    margin-bottom: 2rem;
+}
 
-/**/
+.header2-ul
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+   
+}
+
+.header2-ul >li
+
+{
+    position: relative;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 8rem;
+    
+}
+
+.header2-ul :hover ~.header2-dropdown-content
+{
+    display: block;
+}
+
+
+#header2-dropdown-checkbox+label::after
+{
+    display: inline-block;
+    content: "";
+    background-image: url(/webstudy1/CSS/국민연금공단/resources/i_all_menu.svg);
+    background-size: 0.8rem 0.8rem;
+    width: 0.8rem;
+    height:0.8rem;
+    margin-left: 0.8rem;
+}
+
+#header2-dropdown-checkbox:checked + label::after
+{
+
+    display: inline-block;
+    content: "";
+    background-image: url(/webstudy1/CSS/국민연금공단/resources/i_all_close.svg);
+    background-size: 0.8rem 0.8rem;
+    width: 0.8rem;
+    height:0.8rem;  
+    margin-left: 0.8rem;
+}
+
+.header2-dropdown-content
+{
+    margin: 1rem 0;
+    display: none;
+    position: absolute;
+    background-color: white;
+    height: 30rem; 
+    
+}
+.header2-dropdown-content:hover
+{
+    display: block;
+}
+
+.header2-dropdown-content ul li
+{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/*-----------------main--------------------*/
+
+.main-container
+{
+    margin: 0 auto;
+    width: 80rem;
+
+}
+.main-slider
+{
+    margin-top: 1rem ;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-slider .container:nth-child(1)
+{
+    width: 60%;
+    height: 20rem;
+    border-radius: 10px;
+    
+}
+.main-slider .container:nth-child(1) img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.main-slider .container:nth-child(2)
+{   
+    width:35%;
+    background-color: rgb(248, 248, 248);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-slider .container:nth-child(2) .wrap
+{
+    width: 80%;
+    height: 80%;
+    
+   
+}
+
+
+
+.main-slider .container:nth-child(2) ul
+{
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;   
+    justify-content: center;
+}
+
+.main-slider .container:nth-child(2) ul li
+{
+
+    border: 1px solid #D3D3D3;
+    height:3.5rem;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 14px;
+    background-color: #fff;
+    font-weight: 500;
+    margin: 8px 4px;
+}
