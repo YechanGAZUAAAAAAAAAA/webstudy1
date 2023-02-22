@@ -384,3 +384,117 @@ h1
     font-size: 1.5rem;
     left: 2rem;
 }
+
+
+
+/*-------------main-news------------------*/
+
+.main-news
+{
+    width: 100%;
+}
+
+.main-news .container:nth-child(1)
+{
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.main-news .container:nth-child(1) .box:nth-child(1)
+{
+    background-color: rgb(223, 223, 223);
+    border-radius: 20px;
+}
+
+.main-news .container:nth-child(1) .box:nth-child(1) a
+{
+    display: inline-block;
+    text-align: center;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 20px;
+    padding-top: 1rem; 
+}
+.main-news .container:nth-child(1) .box:nth-child(1) a:hover
+{
+    background-color: rgb(0, 234, 255);
+    color: white;
+}
+
+
+.main-news .container:nth-child(1) .box:nth-child(2)
+{
+    display: flex;
+}
+
+.main-news .container:nth-child(1) .box:nth-child(2) div:nth-child(1)
+{
+    margin-right: 1rem;
+}
+
+.main-news .container:nth-child(1) .box:nth-child(2) div:nth-child(1) a
+{
+    display: inline-block;
+    border: gray 1px solid;
+    border-radius:100px;
+    width: 2rem;
+    text-align: center;
+    height: 2rem;
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+.main-news .container:nth-child(1) .box:nth-child(2) div:nth-child(2) a
+{
+    display: inline-block;
+    border: solid 1px gray;
+    font-weight: bold;
+    border-radius: 50px;
+    width: 4rem;
+    text-align: center;
+    line-height: 2rem;
+    height: 2rem;
+}
+
+.main-news .container:nth-child(2)
+{
+    display: flex ;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+.main-news .container:nth-child(2) .box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 0.5px solid rgb(255, 81, 0);
+    width: calc(100%/3.1);
+    height: 8rem;
+    border-radius: 20px;
+    background-color: rgb(244, 244, 244);
+}
+
+.main-news .container:nth-child(2) .box div
+{
+    
+    display: flex;
+    height: 30%;
+    width: 60%;
+    
+
+}
+
+.main-news .container:nth-child(2) .box div span
+{
+    margin-left: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.main-news .container:nth-child(2) .box div:nth-child(1) span
+{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
